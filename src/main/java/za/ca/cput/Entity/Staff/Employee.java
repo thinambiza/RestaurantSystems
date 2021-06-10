@@ -7,7 +7,7 @@ package za.ca.cput.Entity.Staff;
  */
 
 public class Employee {
-    private int employeeID;
+    private String employeeID;
     private String positionID;
     private String firstName;
     private String lastName;
@@ -30,12 +30,12 @@ public class Employee {
     }
 
     public static class Builder{
-        private int employeeID;
+        private String employeeID;
         private String positionID;
         private String firstName;
         private String lastName;
 
-        public Builder setEmployeeID(int employeeID) {
+        public Builder setEmployeeID(String employeeID) {
             this.employeeID = employeeID;
             return this;
         }
